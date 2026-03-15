@@ -1,0 +1,7 @@
+Place your own dumped game data here.
+
+Supported inputs:
+- SF33RD.AFS
+- 3sx.iso
+
+This package intentionally does not ship any proprietary PS2/game files.
