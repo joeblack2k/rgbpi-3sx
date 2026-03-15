@@ -50,8 +50,8 @@ Not included:
 
 1. Open the latest release in this repository.
 2. Download:
-   - `rgbpi-3sx-v0.1.0-ports.tar.gz`
-   - optionally `rgbpi-3sx-v0.1.0-ports.tar.gz.sha256`
+   - `rgbpi-3sx-v0.1.1-ports.tar.gz`
+   - optionally `rgbpi-3sx-v0.1.1-ports.tar.gz.sha256`
 3. Copy the tarball to your RGB-Pi system.
 4. Extract it directly into:
    - `/media/sd/roms/ports`
@@ -93,13 +93,13 @@ Each GitHub release ships:
 On Linux:
 
 ```bash
-sha256sum -c rgbpi-3sx-v0.1.0-ports.tar.gz.sha256
+sha256sum -c rgbpi-3sx-v0.1.1-ports.tar.gz.sha256
 ```
 
-If you want to compare manually, the current `v0.1.0` archive checksum is:
+If you want to compare manually, the current `v0.1.1` archive checksum is:
 
 ```text
-51745a6a83d42223441d4f195ea85ccf5fcae9ca27af338e64532528d4f77498
+87ecf9e436dc1ae29a9b0bbbb96e6c095d4f694852daba8f67b1172668dc3547
 ```
 
 ## CRT behavior
@@ -113,6 +113,19 @@ Current behavior:
 - writes a `crt-mode-refresh` hint based on the live DRM/fb state
 - prefers `50` or `60` Hz when that information is available
 - validated on RGB-Pi VGA output at `320x240 @ 59.85 Hz`
+
+## Display settings menu
+
+The old `Screen adjust` item is replaced with `Display Settings`.
+
+Inside that menu:
+
+- `60hz mode` switches to the RGB-Pi 240p/60 output mode
+- `50hz mode` switches to the RGB-Pi 240p/50 output mode
+- after switching, 3SX shows a 10-second confirmation prompt
+- press `X` to keep the new mode
+- if you do nothing, it automatically reverts to the previous CRT mode
+- a confirmed refresh is written back to the external 3SX config
 
 ### Why this matters
 
