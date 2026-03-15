@@ -1,6 +1,6 @@
-# rgbpi-3sx v0.1.1
+# rgbpi-3sx v0.1.2
 
-Display settings update for RGB-Pi CRT output.
+Display settings update for RGB-Pi CRT output, with the config persistence fix included.
 
 Included:
 - ARM64 `3sx` binary rebuilt for RGB-Pi

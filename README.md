@@ -50,8 +50,8 @@ Not included:
 
 1. Open the latest release in this repository.
 2. Download:
-   - `rgbpi-3sx-v0.1.1-ports.tar.gz`
-   - optionally `rgbpi-3sx-v0.1.1-ports.tar.gz.sha256`
+   - `rgbpi-3sx-v0.1.2-ports.tar.gz`
+   - optionally `rgbpi-3sx-v0.1.2-ports.tar.gz.sha256`
 3. Copy the tarball to your RGB-Pi system.
 4. Extract it directly into:
    - `/media/sd/roms/ports`
@@ -93,13 +93,13 @@ Each GitHub release ships:
 On Linux:
 
 ```bash
-sha256sum -c rgbpi-3sx-v0.1.1-ports.tar.gz.sha256
+sha256sum -c rgbpi-3sx-v0.1.2-ports.tar.gz.sha256
 ```
 
-If you want to compare manually, the current `v0.1.1` archive checksum is:
+If you want to compare manually, the current `v0.1.2` archive checksum is:
 
 ```text
-87ecf9e436dc1ae29a9b0bbbb96e6c095d4f694852daba8f67b1172668dc3547
+27cd2f0d3c0e13b52c526ff8b3e6fa0c13ddf0ba087f959b10a8b7dbb9607d20
 ```
 
 ## CRT behavior
